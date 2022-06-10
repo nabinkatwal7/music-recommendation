@@ -1,12 +1,14 @@
 import React from 'react'
+import TestMusic from './music/testmusic.mp4'
 
-import { Media, Player, controls } from 'react-media-player'
-const { PlayPause, MuteUnmute } = controls
+import ReactPlayer from 'react-player'
+import './Play.css'
 
 function Play() {
   return (
     <div className='play-div'>
-      <h1>Player</h1>
+      <h3>Title</h3>
+      <ReactPlayer className="play" url={TestMusic} controls='true' width='1920px' height='5vh' />
     </div>
   )
 }
