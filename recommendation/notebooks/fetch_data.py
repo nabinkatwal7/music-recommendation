@@ -11,7 +11,7 @@ sp = authorization.authorize()
 genres = sp.recommendation_genre_seeds()
 
 # Set number of recommendations per genre
-n_recs = 100
+n_recs = 50
 
 # Initiate a dictionairy with all the information you want to crawl
 data_dict = {"id":[], "genre":[], "track_name":[], "artist_name":[],
