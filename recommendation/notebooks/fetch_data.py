@@ -20,7 +20,7 @@ data_dict = {"id":[], "genre":[], "track_name":[], "artist_name":[],"valence":[]
 for g in tqdm(genres):
     #get n recommendation 
     recs = sp.recommendations(genres=[g], limit = n_recs)
-    recs = eval(recs.json().replace("null","-999").replace("false","False").replace("ture","True"))["tracks"]
+    recs = eval(recs.json().replace("null","-999").replace("false","False").replace("true","True"))["tracks"]
 
     for track in recs:
         # ID AND GENRE
@@ -40,3 +40,9 @@ for g in tqdm(genres):
 
 
 #PROCESS DATA 
+
+#Store data in dataframe
+df = pd.DataFrame(data_dict)
+
+df.drop_duplicates(subset = 'id', keep='first', inplace=True)
+df.to_csv("valence_arousal_dataset.csv", index = False)
