@@ -17,11 +17,6 @@ n_recs = 50
 data_dict = {"id":[], "genre":[], "track_name":[], "artist_name":[],
              "valence":[], "energy":[]}
 
-################
-## CRAWL DATA ##
-################
-
-# Get recs for every genre
 for g in tqdm(genres):
     
     # Get n recommendations
@@ -45,10 +40,6 @@ for g in tqdm(genres):
         # Wait 0.2 seconds per track so that the api doesnt overheat
         time.sleep(0.2)
         
-##################
-## PROCESS DATA ##
-##################
-
 # Store data in dataframe
 df = pd.DataFrame(data_dict)
 
