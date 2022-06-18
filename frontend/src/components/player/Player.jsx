@@ -3,6 +3,10 @@ import './Player.css'
 
 export default function Player() {
   return (
-    <div>Player</div>
+    <div className='player'>
+      <h1>
+        Player
+      </h1>
+    </div>
   )
 }

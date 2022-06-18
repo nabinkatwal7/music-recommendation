@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import {BrowserRouter, Link} from 'react-router-dom'
 
 import {useState} from 'react'
 
@@ -40,12 +41,20 @@ export default function Navbar() {
             <SidebarContent>
                 <Menu iconShape='square'>
                     <MenuItem active={true} icon={<AiOutlineHome />}>
-                        Home
+                        <Link to='/'> Home </Link>
                     </MenuItem>
-                    <MenuItem icon={<AiOutlineSearch/>}>Search</MenuItem>
-                    <MenuItem icon={<BiLibrary/>}>Library</MenuItem>
-                    <MenuItem icon={<AiOutlinePlus />}>Recommendation</MenuItem>
-                    <MenuItem icon={<AiOutlineUser/>}>User</MenuItem>
+                    <MenuItem  icon={<AiOutlineSearch/>}>
+                        <Link to='/search'>Search</Link> 
+                    </MenuItem>
+                    <MenuItem icon={<BiLibrary/>}>
+                        <Link to='/library'>Library</Link>
+                    </MenuItem>
+                    <MenuItem icon={<AiOutlinePlus />}>
+                        <Link to='/recommendation'>Recommendation</Link>
+                    </MenuItem>
+                    <MenuItem icon={<AiOutlineUser/>}>
+                        <Link to='/user'>User</Link>
+                    </MenuItem>
                 </Menu>
             </SidebarContent>
             <SidebarFooter>
