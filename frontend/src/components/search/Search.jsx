@@ -7,6 +7,9 @@ function Search() {
   return (
     <div>
         <Navbar />
+        <div className='content'>
+          <h1>Search</h1>
+        </div>
     </div>
   )
 }

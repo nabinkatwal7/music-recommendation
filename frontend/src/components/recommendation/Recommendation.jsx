@@ -7,6 +7,9 @@ function Recommendation() {
   return (
     <div>
       <Navbar />
+      <div className='content'>
+        <h1>Recommendation</h1>
+      </div>
     </div>
   )
 }

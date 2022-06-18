@@ -7,6 +7,9 @@ function User() {
   return (
     <div>
       <Navbar />
+      <div className='content'>
+        <h1>User</h1>
+      </div>
     </div>
   )
 }

@@ -1,8 +1,6 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 
-import Navbar from './components/navbar/Navbar';
-import Content from './components/content/Content'
 import Player from './components/player/Player'
 import Library from './components/library/Library'
 import Recommendation from './components/recommendation/Recommendation'
@@ -22,7 +20,6 @@ function App() {
             <Route path ='/user' element={<User />} />
           </Routes>
         </BrowserRouter>
-        <Content />
         <Player /> 
       </div>
   );

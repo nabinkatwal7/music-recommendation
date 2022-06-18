@@ -7,6 +7,9 @@ function Library() {
   return (
     <div>
       <Navbar />
+      <div className='content'>
+        <h1>Library</h1>
+      </div>
     </div>
   )
 }
