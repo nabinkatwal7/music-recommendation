@@ -1,7 +1,6 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 
-import Player from './components/player/Player'
 import Library from './components/library/Library'
 import Recommendation from './components/recommendation/Recommendation'
 import Search from './components/search/Search'
@@ -20,7 +19,6 @@ function App() {
             <Route path ='/user' element={<User />} />
           </Routes>
         </BrowserRouter>
-        <Player /> 
       </div>
   );
 }

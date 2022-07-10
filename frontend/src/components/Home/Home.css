@@ -1,9 +1,21 @@
 .content{
     position: absolute;
     left: 230px;
-    height: 90vh;
+    height: 100%;
     width: 75%;
     margin: auto;
     border: 1px solid red;
     text-align: center;
+}
+
+.display-grid{
+    display: flex;
+}
+
+.grid{
+    width: 250px;
+    height: 350px; 
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
 }

@@ -17,7 +17,7 @@ n_recs = 50
 data_dict = {"id":[], "genre":[], "track_name":[], "artist_name":[],
              "valence":[], "energy":[]}
 
-for g in tqdm(genres):
+for g in tqdm(genres): 
     
     # Get n recommendations
     recs = sp.recommendations(genres = [g], limit = n_recs)
