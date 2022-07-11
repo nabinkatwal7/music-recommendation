@@ -7,6 +7,8 @@ import Recommendation from "./components/recommendation/Recommendation";
 import Search from "./components/search/Search";
 import User from "./components/user/User";
 import Home from "./components/Home/Home";
+import Login from './components/Login/Login'
+import Signup from './components/Signup/Signup'
 
 function App() {
   // const CLIENT_ID = "12824720980943c684531a5514a21114";
@@ -47,11 +49,14 @@ function App() {
       </a> */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Signup />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/library" element={<Library />} />
           <Route path="/recommendation" element={<Recommendation />} />
           <Route path="/user" element={<User />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
         </Routes>
       </BrowserRouter>
       {/* {!token ? (
