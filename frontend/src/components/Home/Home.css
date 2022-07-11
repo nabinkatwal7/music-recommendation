@@ -4,18 +4,30 @@
     height: 100%;
     width: 75%;
     margin: auto;
-    border: 1px solid red;
     text-align: center;
 }
 
 .display-grid{
     display: flex;
+    flex-direction: column;
 }
 
 .grid{
+    background-color: #1e272c;
+    border-radius: 10px;
     width: 250px;
-    height: 350px; 
-    border: 1px solid red;
+    height: 400px; 
+    /* border: 1px solid red; */
     margin: 10px;
-    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.content-img{
+    width: 230px;
+    height: 300px;
+}
+
+.group-grid{
+    display: flex;
+    flex-direction: row;
 }
